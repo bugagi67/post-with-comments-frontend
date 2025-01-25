@@ -10387,7 +10387,7 @@ function forkJoin() {
 var post = new Post();
 var loadPosts$ = fromEvent(document, "DOMContentLoaded");
 loadPosts$.pipe(mergeMap(function () {
-  return ajax.getJSON("http://localhost:9000/posts/latest").pipe(map(function (response) {
+  return ajax.getJSON("https://post-with-comments-backend.onrender.com/posts/latest").pipe(map(function (response) {
     if (response && response.status === "ok") {
       return response.data;
     } else {
@@ -10407,7 +10407,7 @@ loadPosts$.pipe(mergeMap(function () {
     return of([]);
   }
   var commentObservables = posts.map(function (post) {
-    return ajax.getJSON("http://localhost:9000/posts/".concat(post.id, "/comments/latest")).pipe(map(function (commentsResponse) {
+    return ajax.getJSON("https://post-with-comments-backend.onrender.com/posts/".concat(post.id, "/comments/latest")).pipe(map(function (commentsResponse) {
       if (commentsResponse && commentsResponse.status === "ok") {
         return {
           postId: post.id,
