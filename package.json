@@ -41,5 +41,6 @@
     "core-js": "^3.39.0",
     "date-fns": "^4.1.0",
     "rxjs": "^7.8.1"
-  }
+  },
+  "homepage": "https://github.com/bugagi67.github.io/post-with-comments-frontend"
 }
