@@ -63,7 +63,6 @@ loadPosts$
   )
   .subscribe({
     next: (postsWithComments) => {
-      console.log(postsWithComments.postId);
       if (postsWithComments) {
         postsWithComments.forEach((postWithComments) => {
           const postElement = document.querySelector(
