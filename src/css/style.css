@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Заголовок поста */
+.post-wrapper {
+    padding: 16px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 25px 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.name-and_date {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Контентная картинка */
+.content-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* Заголовок комментариев */
+.title-comments {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Комментарии */
+.container-comments {
+    padding: 0 16px 16px;
+}
+
+.comment-wraper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.avatar-comment {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name-and_message {
+    width: 75%;
+}
+
+.name-comment {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.text-contetn {
+    font-size: 14px;
+    margin: 0;
+}
+
+.date-comment {
+    font-size: 12px;
+    color: #888;
+    margin-left: 8px;
+    text-align: end;
+}
