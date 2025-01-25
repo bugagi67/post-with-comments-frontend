@@ -10,7 +10,7 @@ const loadPosts$ = fromEvent(document, "DOMContentLoaded");
 loadPosts$
   .pipe(
     mergeMap(() => {
-      return ajax.getJSON("http://localhost:9000/posts/latest").pipe(
+      return ajax.getJSON("https://post-with-comments-backend.onrender.com/posts/latest").pipe(
         map((response) => {
           if (response && response.status === "ok") {
             return response.data;
@@ -36,7 +36,7 @@ loadPosts$
       }
       const commentObservables = posts.map((post) => {
         return ajax
-          .getJSON(`http://localhost:9000/posts/${post.id}/comments/latest`)
+          .getJSON(`https://post-with-comments-backend.onrender.com/posts/${post.id}/comments/latest`)
           .pipe(
             map((commentsResponse) => {
               if (commentsResponse && commentsResponse.status === "ok") {
