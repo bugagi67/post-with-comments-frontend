@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js # Устанавливаем Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16 # Или ваша версия Node.js
+          node-version: 20 # Или ваша версия Node.js
 
       - name: Install dependencies # Устанавливаем зависимости
         run: npm ci # Или npm install
