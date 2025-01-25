@@ -10431,7 +10431,6 @@ loadPosts$.pipe(mergeMap(function () {
   return forkJoin(commentObservables);
 })).subscribe({
   next: function next(postsWithComments) {
-    console.log(postsWithComments.postId);
     if (postsWithComments) {
       postsWithComments.forEach(function (postWithComments) {
         var postElement = document.querySelector("[data-post=\"".concat(postWithComments.postId, "\"]"));
